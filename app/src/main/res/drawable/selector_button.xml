@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--这里的状态是按压下去的状态用passed-->
+    <item android:drawable="@drawable/shape_darkblue" android:state_pressed="true"></item>
+    <!--默认状态必须写在最下面-->
+    <item android:drawable="@drawable/shape_blue"></item>
+</selector>

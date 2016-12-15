@@ -1,0 +1,12 @@
+<resources>
+    <!--声明有那些属性-->
+    <attr name="piechartBackgroundColor" format="color"></attr>
+    <attr name="piechartColor" format="color"></attr>
+    <attr name="piechartAngle" format="integer"></attr>
+    <!--声明给谁用，并且可以使用那些属性-->
+    <declare-styleable name="PiechartView">
+        <attr name="piechartBackgroundColor"></attr>
+        <attr name="piechartColor"></attr>
+        <attr name="piechartAngle"></attr>
+    </declare-styleable>
+</resources>

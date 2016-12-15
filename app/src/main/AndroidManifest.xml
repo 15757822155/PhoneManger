@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhuoxin">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashActivity" />
+        <activity android:name=".activity.PhoneActivity" />
+        <activity android:name=".activity.PhoneNumActivity" />
+        <activity android:name=".activity.Guide_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.MusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.HomeActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.SoftwareActivity" />
+        <activity android:name=".activity.SoftManagerActivity" />
+
+        <receiver
+            android:name=".receiver.RebootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.RocketActivity" />
+        <activity android:name=".activity.PhoneStateActivity" />
+        <activity android:name=".activity.FileManagerActivity" />
+        <activity android:name=".activity.FileActivity" />
+        <activity android:name=".activity.CleanActivity"></activity>
+    </application>
+
+</manifest>

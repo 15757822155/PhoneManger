@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="3dp"></corners>
+            <solid android:color="@color/piechartBackgroudColor"></solid>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="3dp"></corners>
+                <solid android:color="@color/piechartColor"></solid>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

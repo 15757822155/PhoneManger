@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--需要设置焦点为false,不持有焦点,能让别的点击事件正常点击-->
+    <CheckBox
+        android:id="@+id/cb_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:focusable="false"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/iv_fileIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/item_textsize"
+        android:layout_toEndOf="@id/cb_file"
+        android:src="@drawable/item_arrow_right" />
+    <TextView
+        android:id="@+id/tv_fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_fileIcon"
+        android:layout_alignTop="@id/iv_fileIcon"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="文件名"
+        android:textSize="@dimen/item_textsize"
+        />
+    <TextView
+        android:id="@+id/tv_fileType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_fileIcon"
+        android:layout_alignBottom="@id/iv_fileIcon"
+        android:text="文件类型"
+
+        />
+</RelativeLayout>
